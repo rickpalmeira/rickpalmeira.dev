@@ -1,0 +1,45 @@
+@page {
+  size: A4;
+}
+@media print {
+  .btn-print,
+  .tooltip {
+    display: none;
+  }
+}
+
+@media screen {
+  body {
+    font-family: "Open Sans", sans-serif;
+    background: var(--bs-light);
+  }
+
+  .sheet {
+    margin: 1rem auto;
+    box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+  }
+
+  .btn-print {
+    border-radius: 50%;
+    height: 51px;
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+    box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.6);
+    z-index: 9;
+  }
+}
+
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
+  font-family: "Product Sans", sans-serif;
+}
+
+.footer {
+  height: 200px;
+}

@@ -1,33 +1,394 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
+    <title>Rick Palmeira</title>
     <meta charset="utf-8" />
-    <title>👋🌎</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
-    <link rel="icon" type="image/png" href="favicon.png" />
-    <style>
-      body {
-        background-color: #2e3440;
-      }
-      .container {
-        max-width: 80vw;
-        margin: 0 auto;
-        margin-top: 10vh;
-      }
-      p {
-        font-family: "Rubik", sans-serif;
-        font-weight: 400;
-        font-size: 3rem;
-        line-height: 1.5;
-        color: #d8dee9;
-      }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--bootstrap-->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!--paper-->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/paper-css/0.3.0/paper.css"
+    />
+    <!--google fonts-->
+    <link rel="preconnect" href="//fonts.googleapis.com" />
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin />
+    <link
+      href="//fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Product+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!--self-->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
   </head>
-  <body>
-    <div class="container">
-      <p>Hello World!</p>
-    </div>
+  <body class="A4">
+    <button
+      type="button"
+      class="btn btn-primary btn-print"
+      onclick="javascript:window.print()"
+      data-bs-toggle="tooltip"
+      data-bs-placement="left"
+      title="Imprimir currículo"
+    >
+      <i class="fa-solid fa-file-pdf fa-lg fa-fw"></i>
+    </button>
+    <section class="sheet">
+      <div class="container-fluid">
+        <div
+          class="row bg-secondary bg-opacity-75 text-light align-items-center py-2"
+        >
+          <div class="col-auto">
+            <img
+              src="//secure.gravatar.com/avatar/ca9473078179615fba7586d4d3a18fbb?size=144"
+              class="rounded-circle border border-light"
+            />
+          </div>
+          <div class="col-auto me-auto">
+            <h1 class="display-5 mb-0">Pedro Ricardo</h1>
+            <h2 class="display-6 mb-0">Rodrigues Palmeira</h2>
+          </div>
+          <div class="col-4">
+            <dl
+              class="row my-2"
+              x-data="{
+                birth: '28 anos (12/07/1993)',
+                location: 'St. Bueno, Goiânia - GO',
+                whatsapp: '+55 61 99326-8419',
+                email: 'rickinbsb@gmail.com',
+                github: 'github.com/rickinbsb'
+              }"
+            >
+              <dt class="col-auto">
+                <i class="fa-solid fa-cake-candles fa-fw fa-lg"></i>
+              </dt>
+              <dd
+                class="col"
+                role="button"
+                @click="window.open('//www.google.com/calendar/event?action=TEMPLATE&dates=20220712%2F20220713')"
+                x-text="birth"
+              ></dd>
+              <div class="w-100"></div>
+              <dt class="col-auto">
+                <i class="fa-solid fa-location-dot fa-fw fa-lg"></i>
+              </dt>
+              <dd
+                class="col"
+                role="button"
+                @click="window.open('//goo.gl/maps/wz4DVmm4LGm1ponY9')"
+                x-text="location"
+              ></dd>
+              <div class="w-100"></div>
+              <dt class="col-auto">
+                <i class="fa-brands fa-whatsapp fa-fw fa-lg"></i>
+              </dt>
+              <dd
+                class="col"
+                role="button"
+                @click="window.open('//api.whatsapp.com/send/?phone=+55061993268419&app_absent=0')"
+                x-text="whatsapp"
+              ></dd>
+              <div class="w-100"></div>
+              <dt class="col-auto">
+                <i class="fa-solid fa-at fa-fw fa-lg"></i>
+              </dt>
+              <dd
+                class="col"
+                role="button"
+                @click="window.open('mailto:rickinbsb@gmail.com')"
+                x-text="email"
+              ></dd>
+              <div class="w-100"></div>
+              <dt class="col-auto">
+                <i class="fa-brands fa-github fa-fw fa-lg"></i>
+              </dt>
+              <dd
+                class="col mb-0"
+                role="button"
+                @click="window.open('//github.com/rickinbsb')"
+                x-text="github"
+              ></dd>
+            </dl>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col border-end">
+            <h3 class="my-2 text-center">Experiência Pratica</h3>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item border-top">
+                <i class="fa-brands fa-js-square fa-fw fa-xl"></i>
+                <span class="h5 pe-2">JavaScript</span>
+                <span class="badge rounded-pill bg-secondary">vue.js</span>
+                <span class="badge rounded-pill bg-secondary">alpine.js</span>
+                <span class="badge rounded-pill bg-secondary">Lodash</span>
+                <span class="badge rounded-pill bg-secondary">Typescript</span>
+                <span class="badge rounded-pill bg-secondary">Angular 4+</span>
+                <span class="badge rounded-pill bg-secondary">angularJS</span>
+                <span class="badge rounded-pill bg-secondary">Electron</span>
+                <span class="badge rounded-pill bg-secondary">jQuery</span>
+              </li>
+              <li class="list-group-item">
+                <i class="fa-brands fa-html5 fa-fw fa-xl"></i>
+                <span class="h5 pe-2">CSS3/HTML5</span>
+                <span class="badge rounded-pill bg-secondary">
+                  Vuetify (material)
+                </span>
+                <span class="badge rounded-pill bg-secondary">Bootstrap</span>
+                <span class="badge rounded-pill bg-secondary">SASS</span>
+                <span class="badge rounded-pill bg-secondary">LESS</span>
+              </li>
+              <li class="list-group-item">
+                <i class="fa-brands fa-php fa-fw fa-xl"></i>
+                <span class="h5 pe-2">PHP</span>
+                <span class="badge rounded-pill bg-secondary">
+                  Symfony 2, 3 e 4
+                </span>
+                <span class="badge rounded-pill bg-secondary">Zend 2</span>
+                <span class="badge rounded-pill bg-secondary">Slim</span>
+              </li>
+              <li class="list-group-item">
+                <i class="fa-brands fa-python fa-fw fa-xl"></i>
+                <span class="h5 pe-2">Python</span>
+                <span class="badge rounded-pill bg-secondary">SQLAlchemy</span>
+                <span class="badge rounded-pill bg-secondary">Pyramid</span>
+              </li>
+              <li class="list-group-item">
+                <i class="fa-solid fa-database fa-fw fa-xl"></i>
+                <span class="h5 pe-2">SQL</span>
+                <span class="badge rounded-pill bg-secondary">Postgres</span>
+                <span class="badge rounded-pill bg-secondary">MySQL</span>
+                <span class="badge rounded-pill bg-secondary">MariaDB</span>
+                <span class="badge rounded-pill bg-secondary">OracleDB</span>
+                <span class="badge rounded-pill bg-secondary">SQL Server</span>
+              </li>
+              <li class="list-group-item">
+                <i class="fa-solid fa-code fa-fw fa-xl"></i>
+                <span class="h5 pe-2">Outros</span>
+                <span class="badge rounded-pill bg-secondary"
+                  >Rest/Restful APIs</span
+                >
+                <span class="badge rounded-pill bg-secondary">Docker</span>
+                <span class="badge rounded-pill bg-secondary">Bash</span>
+                <span class="badge rounded-pill bg-secondary">Kubernetes</span>
+                <span class="badge rounded-pill bg-secondary">CI/CL</span>
+                <span class="badge rounded-pill bg-secondary">Git</span>
+                <span class="badge rounded-pill bg-secondary">Gulp</span>
+                <span class="badge rounded-pill bg-secondary">Jenkins</span>
+              </li>
+              <li class="list-group-item border-bottom">
+                <i class="fa-solid fa-language fa-fw fa-xl"></i>
+                <span class="h5 pe-2">Linguas</span>
+                <span class="badge rounded-pill bg-secondary"
+                  >Inglês fluente</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col border-start">
+            <h3 class="my-2 text-center">Experiência Profissional</h3>
+            <div class="list-group list-group-flush">
+              <div class="list-group-item border-top">
+                <div class="row align-items-center">
+                  <div class="col-2 px-0">
+                    <img src="assets/acao.jpg" width="60" />
+                  </div>
+                  <div class="col">
+                    <h5 class="text-truncate" style="max-width: 278px">
+                      Ação Tecnologia
+                    </h5>
+                    <span>
+                      <i class="fa-solid fa-user-tie fa-fw"></i> Desenvolvedor
+                      Sênior/Arquiteto
+                    </span>
+                    <br />
+                    <span>
+                      <i class="fa-solid fa-calendar fa-fw"></i> 02/2020 ~
+                      Atualmente
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="list-group-item">
+                <div class="row align-items-center">
+                  <div class="col-2 px-0">
+                    <img src="assets/pix.jpg" width="60" />
+                  </div>
+                  <div class="col">
+                    <h5 class="text-truncate" style="max-width: 278px">
+                      Pix Tecnologia
+                    </h5>
+                    <span>
+                      <i class="fa-solid fa-user-tie fa-fw"></i> Desenvolvedor
+                      Sênior
+                    </span>
+                    <br />
+                    <span>
+                      <i class="fa-solid fa-calendar fa-fw"></i> 02/2018 ~
+                      11/2020
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="list-group-item">
+                <div class="row align-items-center">
+                  <div class="col-2 px-0">
+                    <img src="assets/websis.jpg" width="60" />
+                  </div>
+                  <div class="col">
+                    <h5 class="text-truncate" style="max-width: 278px">
+                      Websis Tecnologia e Sistemas
+                    </h5>
+                    <span>
+                      <i class="fa-solid fa-user-tie fa-fw"></i> Desenvolvedor
+                      Pleno
+                    </span>
+                    <br />
+                    <span>
+                      <i class="fa-solid fa-calendar fa-fw"></i> 08/2017 ~
+                      01/2018
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="list-group-item">
+                <div class="row align-items-center">
+                  <div class="col-2 px-0">
+                    <img src="assets/xys.jpg" width="60" />
+                  </div>
+                  <div class="col">
+                    <h5 class="text-truncate" style="max-width: 278px">
+                      Xys Tecnologia
+                    </h5>
+                    <span>
+                      <i class="fa-solid fa-user-tie fa-fw"></i> Desenvolvedor
+                      Júnior/Pleno
+                    </span>
+                    <br />
+                    <span>
+                      <i class="fa-solid fa-calendar fa-fw"></i> 07/2014 ~
+                      09/2016
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="list-group-item">
+                <div class="row align-items-center">
+                  <div class="col-2 px-0">
+                    <img src="assets/light.jpg" width="60" />
+                  </div>
+                  <div class="col">
+                    <h5
+                      class="text-truncate"
+                      style="max-width: 278px"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="bottom"
+                      title="LightBase - Serviços e Consultoria em Software Público"
+                    >
+                      LightBase - Serviços e Consultoria em Software Público
+                    </h5>
+                    <span>
+                      <i class="fa-solid fa-user-tie fa-fw"></i> Desenvolvedor
+                      Trainee/Júnior
+                    </span>
+                    <br />
+                    <span>
+                      <i class="fa-solid fa-calendar fa-fw"></i> 02/2013 ~
+                      06/2014
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row border-top pb-3">
+          <div class="col">
+            <h3 class="my-2 text-center">Formação Acadêmica</h3>
+            <div class="row align-items-center">
+              <div class="col-auto">
+                <img src="assets/projecao.jpg" height="80" />
+              </div>
+              <div class="col">
+                <h5>Faculdade Projeção</h5>
+                <span>
+                  <i class="fa-solid fa-user-graduate fa-fw"></i> Análise e
+                  Desenvolvimento de Sistemas
+                </span>
+                <br />
+                <span>
+                  <i class="fa-solid fa-calendar fa-fw"></i> 08/2011 ~ 07/2014
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row border-top pb-3">
+          <div class="col">
+            <h3 class="my-2 text-center">Qualificações</h3>
+            <div class="row align-items-center">
+              <div class="col-auto">
+                <img src="assets/cilc.jpg" height="80" />
+              </div>
+              <div class="col">
+                <h5>CILC - Centro Interescolar de Línguas de Ceilândia</h5>
+                <span>
+                  <i class="fa-solid fa-user-graduate fa-fw"></i>Inglês
+                  Avançando
+                </span>
+                <br />
+                <span>
+                  <i class="fa-solid fa-calendar fa-fw"></i> 02/2007 ~ 09/2012
+                </span>
+              </div>
+            </div>
+            <hr />
+            <div class="row align-items-center">
+              <div class="col-auto">
+                <img src="assets/etc.jpg" height="80" />
+              </div>
+              <div class="col">
+                <h5>ETC - Escola Técnica de Ceilândia</h5>
+                <span>
+                  <i class="fa-solid fa-user-graduate fa-fw"></i>Técnico em
+                  Sistemas de Informação
+                </span>
+                <br />
+                <span>
+                  <i class="fa-solid fa-calendar fa-fw"></i> 02/2009 ~ 07/2010
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--alpine-->
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <!--bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!--font awesome-->
+    <script
+      src="//kit.fontawesome.com/5748d68e3b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
   </body>
 </html>
