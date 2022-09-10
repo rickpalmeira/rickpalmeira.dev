@@ -53,12 +53,12 @@
             <h1 class="display-5 mb-0">Pedro Ricardo</h1>
             <h2 class="display-6 mb-0">Rodrigues Palmeira</h2>
           </div>
-          <div class="col-4">
+          <div class="col">
             <dl
               class="row my-2"
               x-data="{
-                birth: '28 anos (12/07/1993)',
-                location: 'St. Bueno, Goiânia - GO',
+                birth: '12/07/1993 (29y)',
+                location: 'St. Aeroporto, Goiânia - GO',
                 whatsapp: '+55 61 99326-8419',
                 email: 'rickinbsb@gmail.com',
                 github: 'github.com/rickinbsb'
@@ -70,7 +70,7 @@
               <dd
                 class="col"
                 role="button"
-                @click="window.open('//www.google.com/calendar/event?action=TEMPLATE&dates=20220712%2F20220713')"
+                @click="window.open('//www.google.com/calendar/event?action=TEMPLATE&dates=20230712%2F20230713')"
                 x-text="birth"
               ></dd>
               <div class="w-100"></div>
@@ -80,7 +80,7 @@
               <dd
                 class="col"
                 role="button"
-                @click="window.open('//goo.gl/maps/wz4DVmm4LGm1ponY9')"
+                @click="window.open('//goo.gl/maps/nr9TWMCikMAw4BJh7')"
                 x-text="location"
               ></dd>
               <div class="w-100"></div>
@@ -118,7 +118,7 @@
         </div>
         <div class="row">
           <div class="col border-end">
-            <h3 class="my-2 text-center">Experiência Pratica</h3>
+            <h3 class="my-2 text-center">Known Technologies</h3>
             <ul class="list-group list-group-flush">
               <li class="list-group-item border-top">
                 <i class="fa-brands fa-js-square fa-fw fa-xl"></i>
@@ -145,11 +145,11 @@
               <li class="list-group-item">
                 <i class="fa-brands fa-php fa-fw fa-xl"></i>
                 <span class="h5 pe-2">PHP</span>
-                <span class="badge rounded-pill bg-secondary">
-                  Symfony 2, 3 e 4
-                </span>
+                <span class="badge rounded-pill bg-secondary">Symfony 2~4</span>
+                <span class="badge rounded-pill bg-secondary">Laravel</span>
                 <span class="badge rounded-pill bg-secondary">Zend 2</span>
                 <span class="badge rounded-pill bg-secondary">Slim</span>
+                <span class="badge rounded-pill bg-secondary">Yii</span>
               </li>
               <li class="list-group-item">
                 <i class="fa-brands fa-python fa-fw fa-xl"></i>
@@ -168,10 +168,11 @@
               </li>
               <li class="list-group-item">
                 <i class="fa-solid fa-code fa-fw fa-xl"></i>
-                <span class="h5 pe-2">Outros</span>
+                <span class="h5 pe-2">Misc</span>
                 <span class="badge rounded-pill bg-secondary"
                   >Rest/Restful APIs</span
                 >
+                <span class="badge rounded-pill bg-secondary">Adobe Experience Manager</span>
                 <span class="badge rounded-pill bg-secondary">Docker</span>
                 <span class="badge rounded-pill bg-secondary">Bash</span>
                 <span class="badge rounded-pill bg-secondary">Kubernetes</span>
@@ -182,18 +183,37 @@
               </li>
               <li class="list-group-item border-bottom">
                 <i class="fa-solid fa-language fa-fw fa-xl"></i>
-                <span class="h5 pe-2">Linguas</span>
-                <span class="badge rounded-pill bg-secondary"
-                  >Inglês fluente</span
-                >
+                <span class="h5 pe-2">Language</span>
+                <span class="badge rounded-pill bg-secondary">Fluent English</span>
+                <span class="badge rounded-pill bg-secondary">Native Portuguese</span>
               </li>
             </ul>
           </div>
 
           <div class="col border-start">
-            <h3 class="my-2 text-center">Experiência Profissional</h3>
+            <h3 class="my-2 text-center">Professional Experience</h3>
             <div class="list-group list-group-flush">
               <div class="list-group-item border-top">
+                <div class="row align-items-center">
+                  <div class="col-2 px-0">
+                    <img src="assets/uol.jpg" width="60" />
+                  </div>
+                  <div class="col">
+                    <h5 class="text-truncate" style="max-width: 278px">
+                      Compass.uol
+                    </h5>
+                    <span>
+                      <i class="fa-solid fa-user-tie fa-fw"></i> Arquiteto de Software
+                    </span>
+                    <br />
+                    <span>
+                      <i class="fa-solid fa-calendar fa-fw"></i> 04/2022 ~
+                      Atualmente
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="list-group-item">
                 <div class="row align-items-center">
                   <div class="col-2 px-0">
                     <img src="assets/acao.jpg" width="60" />
@@ -209,7 +229,7 @@
                     <br />
                     <span>
                       <i class="fa-solid fa-calendar fa-fw"></i> 02/2020 ~
-                      Atualmente
+                      04/2022
                     </span>
                   </div>
                 </div>
