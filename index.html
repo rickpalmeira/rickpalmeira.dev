@@ -26,7 +26,7 @@
       href="//fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Product+Sans&display=swap"
       rel="stylesheet"
     />
-    <!--self-->
+    <!--custom-->
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/png" href="assets/favicon.png" />
   </head>
@@ -60,11 +60,11 @@
             <dl
               class="row my-2"
               x-data="{
-                birth: 'July 12th, 1993 (29y)',
+                birth: 'July 12th, 1993 (31y)',
                 location: 'Goiânia, Brazil',
-                whatsapp: '+55 61 99326-8419',
+                whatsapp: '+55 62 99852-7795',
                 email: 'rickinbsb@gmail.com',
-                github: 'github.com/rickinbsb'
+                github: 'github.com/rickpalmeira'
               }"
             >
               <dt class="col-auto">
@@ -83,7 +83,7 @@
               <dd
                 class="col"
                 role="button"
-                @click="window.open('//goo.gl/maps/nr9TWMCikMAw4BJh7')"
+                @click="window.open('//maps.app.goo.gl/it2VhT71nDMqjQ9r6')"
                 x-text="location"
               ></dd>
               <div class="w-100"></div>
@@ -93,7 +93,7 @@
               <dd
                 class="col"
                 role="button"
-                @click="window.open('//api.whatsapp.com/send/?phone=55061993268419&text&type=phone_number&app_absent=0')"
+                @click="window.open('//api.whatsapp.com/send/?phone=55062998527795&text&type=phone_number&app_absent=0')"
                 x-text="whatsapp"
               ></dd>
               <div class="w-100"></div>
@@ -113,7 +113,7 @@
               <dd
                 class="col mb-0"
                 role="button"
-                @click="window.open('//github.com/rickinbsb')"
+                @click="window.open('//github.com/rickpalmeira')"
                 x-text="github"
               ></dd>
             </dl>
@@ -123,6 +123,39 @@
           <div class="col">
             <h1 class="display-6 my-3 text-center">Professional Experiences</h1>
             <div class="list-group list-group-flush">
+              <div class="list-group-item">
+                <div class="row align-items-center">
+                  <div class="col-auto">
+                    <img src="assets/2mundos.svg" width="60" />
+                  </div>
+                  <div class="col-4">
+                    <h5 class="text-truncate">2 Mundos</h5>
+                    <span>
+                      <i class="fa-solid fa-user-tie fa-fw"></i> Senior Software
+                      Engineer
+                    </span>
+                    <br />
+                    <span>
+                      <i class="fa-solid fa-calendar fa-fw"></i> Oct 2024 ~
+                      currently
+                    </span>
+                  </div>
+                  <div class="col border-start">
+                    <p class="mb-0">
+                      <small>
+                        Currently focused on developing serverless applications
+                        using AWS Lambda with Node.js and sometimes other
+                        runtimes like bun.js. Building and maintaining modern
+                        web applications using React + Ant Design. Implementing
+                        cloud-native solutions while ensuring high performance,
+                        scalability, and maintainability of the codebase.
+                        Collaborating with the team to deliver robust solutions
+                        that meet business requirements and technical standards.
+                      </small>
+                    </p>
+                  </div>
+                </div>
+              </div>
               <div class="list-group-item">
                 <div class="row align-items-center">
                   <div class="col-auto">
@@ -136,19 +169,23 @@
                     </span>
                     <br />
                     <span>
-                      <i class="fa-solid fa-calendar fa-fw"></i> Apr 2022 ~
-                      currently
+                      <i class="fa-solid fa-calendar fa-fw"></i> Apr 2022 ~ Nov
+                      2023
                     </span>
                   </div>
                   <div class="col border-start">
                     <p class="mb-0">
                       <small>
-                        As the squad's architect, my role is to analyze client's
-                        requests, break them down and assist the team with
-                        working on the tasks necessary to fulfill them. I also
-                        work on making sure the devs use good practices when
-                        developing by doing code reviews, analyzing merge
-                        requests and overseeing the delivery flow.
+                        Served as the technical lead for a cross-functional
+                        squad, architecting solutions for complex client
+                        requirements. Responsibilities centered around analyzing
+                        and decomposing client requirements into actionable
+                        technical tasks, while establishing and enforcing coding
+                        standards through thorough code reviews. Actively
+                        mentored development team members and optimized delivery
+                        workflows, implementing architectural improvements to
+                        enhance system scalability and maintainability
+                        throughout the development lifecycle.
                       </small>
                     </p>
                   </div>
@@ -174,14 +211,16 @@
                   <div class="col border-start">
                     <p class="mb-0">
                       <small>
-                        Starting as a freelancer but going full time after a
-                        while, I joined this project working exclusively on the
-                        front-end at first, but joined the back-end team too
-                        later on, working on the api consumed by the web
-                        application. My time there involved reworking the
-                        project's structure to make use of reusable components
-                        as well as breaking some parts of the API into
-                        microservices.
+                        Initially joined as a freelancer before transitioning to
+                        a full-time role, leading full-stack development
+                        initiatives across the organization. Spearheaded the
+                        restructuring of the frontend architecture to implement
+                        reusable component patterns, later expanding
+                        responsibilities to lead backend development and REST
+                        API implementation. Orchestrated the transformation of
+                        monolithic systems into microservices architecture,
+                        significantly improving system scalability and
+                        maintainability through modern architectural patterns.
                       </small>
                     </p>
                   </div>
@@ -207,12 +246,16 @@
                   <div class="col border-start">
                     <p class="mb-0">
                       <small>
-                        During my time working with Pix, I maintained and
-                        evolved legacy monolith applications and also created
-                        smaller applications based on micro frontends and
-                        microservices, having the opportunity to work on updated
-                        versions of applications that I've worked years before
-                        on another company (Xsocial).
+                        Drove the modernization of legacy systems while
+                        developing new solutions, maintaining and enhancing
+                        existing monolithic applications while ensuring business
+                        continuity. Architected and implemented micro frontend
+                        solutions and microservices, leading the successful
+                        migration of legacy applications to modern technology
+                        stacks. Worked closely with cross-functional teams to
+                        ensure seamless integration between new and existing
+                        systems, maintaining system stability throughout the
+                        transformation process.
                       </small>
                     </p>
                   </div>
@@ -238,9 +281,14 @@
                   <div class="col border-start">
                     <p class="mb-0">
                       <small>
-                        At Websis, my main task was to maintain legacy
-                        applications and kickstart the development of newer
-                        versions from scratch to replace them.
+                        Focused on legacy system maintenance while driving
+                        modernization initiatives throughout the organization.
+                        Led the initial development of next-generation
+                        applications to replace legacy systems, implementing
+                        modern development practices and technologies in new
+                        projects. Maintained critical legacy systems while
+                        ensuring smooth transition to new solutions, balancing
+                        maintenance requirements with modernization goals.
                       </small>
                     </p>
                   </div>
@@ -266,11 +314,16 @@
                   <div class="col border-start">
                     <p class="mb-0">
                       <small>
-                        At Xys, most of my time was focused on maintaining a PHP
-                        and angular based product, that was sold as a package to
-                        various different customers but also developing new
-                        modules on it to fit said customers' more specific
-                        needs.
+                        Specialized in developing and maintaining a PHP and
+                        Angular-based enterprise product, focusing on
+                        customizing and extending core product functionality to
+                        meet diverse client requirements. Developed new modules
+                        and features based on specific customer needs while
+                        maintaining and optimizing existing codebase to ensure
+                        backward compatibility. Worked directly with clients to
+                        gather requirements and implement tailored solutions,
+                        ensuring high customer satisfaction and product
+                        reliability.
                       </small>
                     </p>
                   </div>
@@ -296,12 +349,16 @@
                   <div class="col border-start">
                     <p class="mb-0">
                       <small>
-                        Starting as an intern but being hired later on,
-                        Lightbase was where I started taking an interest in Open
-                        Source and collaborative development, working with
-                        daemons and crons for some time and then moving on to
-                        web development. I learned about foundations and good
-                        practices.
+                        Progressed from intern to junior developer role,
+                        focusing on open-source development and system
+                        administration tasks. Gained valuable hands-on
+                        experience with system daemons and cron job development
+                        before transitioning to web development. Contributed to
+                        open-source projects while learning collaborative
+                        development workflows and fundamental development
+                        practices. This formative experience provided a strong
+                        foundation in software development principles and best
+                        practices that shaped future career growth.
                       </small>
                     </p>
                   </div>
@@ -321,10 +378,10 @@
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
                 <i class="fa-brands fa-js-square fa-fw fa-xl"></i>
-                <span class="h5 pe-2">JavaScript</span>
-                <span class="badge rounded-pill bg-secondary">Typescript</span>
+                <span class="h5 pe-2">Typescript/JavaScript</span>
                 <span class="badge rounded-pill bg-secondary">Vue</span>
-                <span class="badge rounded-pill bg-secondary">Angular 4+</span>
+                <span class="badge rounded-pill bg-secondary">Angular</span>
+                <span class="badge rounded-pill bg-secondary">React</span>
                 <span class="badge rounded-pill bg-secondary">alpine.js</span>
                 <span class="badge rounded-pill bg-secondary">Electron</span>
                 <span class="badge rounded-pill bg-secondary">Lodash</span>
@@ -336,31 +393,28 @@
                 <span class="h5 pe-2">CSS3/HTML5</span>
                 <span class="badge rounded-pill bg-secondary">Vite</span>
                 <span class="badge rounded-pill bg-secondary">Vuetify</span>
-                <span class="badge rounded-pill bg-secondary">Bootstrap</span>
-                <span class="badge rounded-pill bg-secondary">Materialize</span>
                 <span class="badge rounded-pill bg-secondary">Tailwind</span>
+                <span class="badge rounded-pill bg-secondary">Bootstrap</span>
+                <span class="badge rounded-pill bg-secondary">Ant Design</span>
+                <span class="badge rounded-pill bg-secondary">Materialize</span>
                 <span class="badge rounded-pill bg-secondary">SASS</span>
                 <span class="badge rounded-pill bg-secondary">LESS</span>
               </li>
               <li class="list-group-item">
                 <i class="fa-brands fa-node fa-fw fa-xl"></i>
                 <span class="h5 pe-2">Node</span>
+                <span class="badge rounded-pill bg-secondary">bun.js</span>
+                <span class="badge rounded-pill bg-secondary">hono.js</span>
                 <span class="badge rounded-pill bg-secondary">NestJS</span>
                 <span class="badge rounded-pill bg-secondary">Express</span>
                 <span class="badge rounded-pill bg-secondary">Axios</span>
               </li>
               <li class="list-group-item">
-                <i class="fa-brands fa-python fa-fw fa-xl"></i>
-                <span class="h5 pe-2">Python</span>
-                <span class="badge rounded-pill bg-secondary">SQLAlchemy</span>
-                <span class="badge rounded-pill bg-secondary">Pyramid</span>
-              </li>
-              <li class="list-group-item">
                 <i class="fa-brands fa-php fa-fw fa-xl"></i>
                 <span class="h5 pe-2">PHP</span>
-                <span class="badge rounded-pill bg-secondary">Symfony 2~4</span>
+                <span class="badge rounded-pill bg-secondary">Symfony</span>
                 <span class="badge rounded-pill bg-secondary">Laravel</span>
-                <span class="badge rounded-pill bg-secondary">Zend 2</span>
+                <span class="badge rounded-pill bg-secondary">Zend</span>
                 <span class="badge rounded-pill bg-secondary">Slim</span>
                 <span class="badge rounded-pill bg-secondary">Yii</span>
                 <span class="badge rounded-pill bg-secondary">PHPUnit</span>
@@ -371,8 +425,23 @@
                 <span class="badge rounded-pill bg-secondary">PostgreSQL</span>
                 <span class="badge rounded-pill bg-secondary">MySQL</span>
                 <span class="badge rounded-pill bg-secondary">MariaDB</span>
+                <span class="badge rounded-pill bg-secondary">SQLite</span>
                 <span class="badge rounded-pill bg-secondary">OracleDB</span>
                 <span class="badge rounded-pill bg-secondary">SQL Server</span>
+              </li>
+              <li class="list-group-item">
+                <i class="fa-solid fa-cloud fa-fw fa-xl"></i>
+                <span class="h5 pe-2">Cloud</span>
+                <span class="badge rounded-pill bg-secondary">AWS</span>
+                <span class="badge rounded-pill bg-secondary"
+                  >Serverless functions</span
+                >
+                <span class="badge rounded-pill bg-secondary"
+                  >Edge Computing</span
+                >
+                <span class="badge rounded-pill bg-secondary"
+                  >Cloudflare Workers</span
+                >
               </li>
               <li class="list-group-item">
                 <i class="fa-solid fa-code fa-fw fa-xl"></i>
@@ -380,13 +449,11 @@
                 <span class="badge rounded-pill bg-secondary"
                   >Rest/Restful APIs</span
                 >
-                <span class="badge rounded-pill bg-secondary">AEM</span>
                 <span class="badge rounded-pill bg-secondary">Docker</span>
                 <span class="badge rounded-pill bg-secondary">Bash</span>
                 <span class="badge rounded-pill bg-secondary">Kubernetes</span>
                 <span class="badge rounded-pill bg-secondary">CI/CD</span>
                 <span class="badge rounded-pill bg-secondary">Git</span>
-                <span class="badge rounded-pill bg-secondary">Gulp</span>
                 <span class="badge rounded-pill bg-secondary">Jenkins</span>
                 <span class="badge rounded-pill bg-secondary">Scrum</span>
               </li>
@@ -496,7 +563,7 @@
     ></script>
     <script>
       var tooltipTriggerList = [].slice.call(
-        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        document.querySelectorAll('[data-bs-toggle="tooltip"]'),
       );
       var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl);
