@@ -1,0 +1,72 @@
+[
+  {
+    "company": "2 Mundos",
+    "logo": "2mundos.svg",
+    "title": "Senior Software Engineer",
+    "period": {
+      "start": "Oct 2024",
+      "end": "currently"
+    },
+    "description": "Currently focused on developing serverless applications using AWS Lambda with Node.js and sometimes other runtimes like bun.js. Building and maintaining modern web applications using React + Ant Design. Implementing cloud-native solutions while ensuring high performance, scalability, and maintainability of the codebase. Collaborating with the team to deliver robust solutions that meet business requirements and technical standards."
+  },
+  {
+    "company": "Compass UOL",
+    "logo": "uol.jpg",
+    "title": "Software Architect",
+    "period": {
+      "start": "Apr 2022",
+      "end": "Nov 2023"
+    },
+    "description": "Served as the technical lead for a cross-functional squad, architecting solutions for complex client requirements. Responsibilities centered around analyzing and decomposing client requirements into actionable technical tasks, while establishing and enforcing coding standards through thorough code reviews. Actively mentored development team members and optimized delivery workflows, implementing architectural improvements to enhance system scalability and maintainability throughout the development lifecycle."
+  },
+  {
+    "company": "Ação Tecnologia",
+    "logo": "acao.jpg",
+    "title": "Software Architect",
+    "period": {
+      "start": "Feb 2020",
+      "end": "Apr 2022"
+    },
+    "description": "Initially joined as a freelancer before transitioning to a full-time role, leading full-stack development initiatives across the organization. Spearheaded the restructuring of the frontend architecture to implement reusable component patterns, later expanding responsibilities to lead backend development and REST API implementation. Orchestrated the transformation of monolithic systems into microservices architecture, significantly improving system scalability and maintainability through modern architectural patterns."
+  },
+  {
+    "company": "Pix Tecnologia",
+    "logo": "pix.jpg",
+    "title": "Senior Full Stack Developer",
+    "period": {
+      "start": "Feb 2018",
+      "end": "Nov 2020"
+    },
+    "description": "Drove the modernization of legacy systems while developing new solutions, maintaining and enhancing existing monolithic applications while ensuring business continuity. Architected and implemented micro frontend solutions and microservices, leading the successful migration of legacy applications to modern technology stacks. Worked closely with cross-functional teams to ensure seamless integration between new and existing systems, maintaining system stability throughout the transformation process."
+  },
+  {
+    "company": "Websis Tecnologia",
+    "logo": "websis.jpg",
+    "title": "Full Stack Developer",
+    "period": {
+      "start": "Aug 2017",
+      "end": "Jan 2018"
+    },
+    "description": "Focused on legacy system maintenance while driving modernization initiatives throughout the organization. Led the initial development of next-generation applications to replace legacy systems, implementing modern development practices and technologies in new projects. Maintained critical legacy systems while ensuring smooth transition to new solutions, balancing maintenance requirements with modernization goals."
+  },
+  {
+    "company": "Xys Tecnologia",
+    "logo": "xys.jpg",
+    "title": "Full Stack Developer",
+    "period": {
+      "start": "Jul 2014",
+      "end": "Sep 2016"
+    },
+    "description": "Specialized in developing and maintaining a PHP and Angular-based enterprise product, focusing on customizing and extending core product functionality to meet diverse client requirements. Developed new modules and features based on specific customer needs while maintaining and optimizing existing codebase to ensure backward compatibility. Worked directly with clients to gather requirements and implement tailored solutions, ensuring high customer satisfaction and product reliability."
+  },
+  {
+    "company": "LightBase",
+    "logo": "light.jpg",
+    "title": "Junior Developer",
+    "period": {
+      "start": "Feb 2013",
+      "end": "Jun 2014"
+    },
+    "description": "Progressed from intern to junior developer role, focusing on open-source development and system administration tasks. Gained valuable hands-on experience with system daemons and cron job development before transitioning to web development. Contributed to open-source projects while learning collaborative development workflows and fundamental development practices. This formative experience provided a strong foundation in software development principles and best practices that shaped future career growth."
+  }
+]

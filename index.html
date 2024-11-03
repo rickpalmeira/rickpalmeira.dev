@@ -41,7 +41,7 @@
     >
       <i class="fa-solid fa-file-pdf fa-lg fa-fw"></i>
     </button>
-    <section class="sheet">
+    <section class="sheet h-100">
       <div class="container-fluid">
         <div
           class="row bg-secondary bg-opacity-75 text-light align-items-center py-2"
@@ -122,248 +122,43 @@
         <div class="row">
           <div class="col">
             <h1 class="display-6 my-3 text-center">Professional Experiences</h1>
-            <div class="list-group list-group-flush">
-              <div class="list-group-item">
-                <div class="row align-items-center">
-                  <div class="col-auto">
-                    <img src="assets/2mundos.svg" width="60" />
-                  </div>
-                  <div class="col-4">
-                    <h5 class="text-truncate">2 Mundos</h5>
-                    <span>
-                      <i class="fa-solid fa-user-tie fa-fw"></i> Senior Software
-                      Engineer
-                    </span>
-                    <br />
-                    <span>
-                      <i class="fa-solid fa-calendar fa-fw"></i> Oct 2024 ~
-                      currently
-                    </span>
-                  </div>
-                  <div class="col border-start">
-                    <p class="mb-0">
-                      <small>
-                        Currently focused on developing serverless applications
-                        using AWS Lambda with Node.js and sometimes other
-                        runtimes like bun.js. Building and maintaining modern
-                        web applications using React + Ant Design. Implementing
-                        cloud-native solutions while ensuring high performance,
-                        scalability, and maintainability of the codebase.
-                        Collaborating with the team to deliver robust solutions
-                        that meet business requirements and technical standards.
-                      </small>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="list-group-item">
-                <div class="row align-items-center">
-                  <div class="col-auto">
-                    <img src="assets/uol.jpg" width="60" />
-                  </div>
-                  <div class="col-4">
-                    <h5 class="text-truncate">Compass UOL</h5>
-                    <span>
-                      <i class="fa-solid fa-user-tie fa-fw"></i> Software
-                      Architect
-                    </span>
-                    <br />
-                    <span>
-                      <i class="fa-solid fa-calendar fa-fw"></i> Apr 2022 ~ Nov
-                      2023
-                    </span>
-                  </div>
-                  <div class="col border-start">
-                    <p class="mb-0">
-                      <small>
-                        Served as the technical lead for a cross-functional
-                        squad, architecting solutions for complex client
-                        requirements. Responsibilities centered around analyzing
-                        and decomposing client requirements into actionable
-                        technical tasks, while establishing and enforcing coding
-                        standards through thorough code reviews. Actively
-                        mentored development team members and optimized delivery
-                        workflows, implementing architectural improvements to
-                        enhance system scalability and maintainability
-                        throughout the development lifecycle.
-                      </small>
-                    </p>
+            <div
+              class="list-group list-group-flush"
+              x-data="{jobs: []}"
+              x-init="jobs = await (await fetch('/assets/jobs.json')).json()"
+            >
+              <template x-for="job in jobs" :key="job.company">
+                <div class="list-group-item">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <img
+                        :src="'assets/' + job.logo"
+                        width="60"
+                        :alt="job.company + ' logo'"
+                      />
+                    </div>
+                    <div class="col-4">
+                      <h5 class="text-truncate" x-text="job.company"></h5>
+                      <span>
+                        <i class="fa-solid fa-user-tie fa-fw"></i>
+                        <span x-text="job.title"></span>
+                      </span>
+                      <br />
+                      <span>
+                        <i class="fa-solid fa-calendar fa-fw"></i>
+                        <span
+                          x-text="job.period.start + ' ~ ' + job.period.end"
+                        ></span>
+                      </span>
+                    </div>
+                    <div class="col border-start">
+                      <p class="mb-0">
+                        <small x-text="job.description"></small>
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="list-group-item">
-                <div class="row align-items-center">
-                  <div class="col-auto">
-                    <img src="assets/acao.jpg" width="60" />
-                  </div>
-                  <div class="col-4">
-                    <h5 class="text-truncate">Ação Tecnologia</h5>
-                    <span>
-                      <i class="fa-solid fa-user-tie fa-fw"></i> Software
-                      Architect
-                    </span>
-                    <br />
-                    <span>
-                      <i class="fa-solid fa-calendar fa-fw"></i> Feb 2020 ~ Apr
-                      2022
-                    </span>
-                  </div>
-                  <div class="col border-start">
-                    <p class="mb-0">
-                      <small>
-                        Initially joined as a freelancer before transitioning to
-                        a full-time role, leading full-stack development
-                        initiatives across the organization. Spearheaded the
-                        restructuring of the frontend architecture to implement
-                        reusable component patterns, later expanding
-                        responsibilities to lead backend development and REST
-                        API implementation. Orchestrated the transformation of
-                        monolithic systems into microservices architecture,
-                        significantly improving system scalability and
-                        maintainability through modern architectural patterns.
-                      </small>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="list-group-item">
-                <div class="row align-items-center">
-                  <div class="col-auto">
-                    <img src="assets/pix.jpg" width="60" />
-                  </div>
-                  <div class="col-4">
-                    <h5 class="text-truncate">Pix Tecnologia</h5>
-                    <span class="text-truncate">
-                      <i class="fa-solid fa-user-tie fa-fw"></i>
-                      Senior full Stack Developer
-                    </span>
-                    <br />
-                    <span>
-                      <i class="fa-solid fa-calendar fa-fw"></i> Feb 2018 ~ Nov
-                      2020
-                    </span>
-                  </div>
-                  <div class="col border-start">
-                    <p class="mb-0">
-                      <small>
-                        Drove the modernization of legacy systems while
-                        developing new solutions, maintaining and enhancing
-                        existing monolithic applications while ensuring business
-                        continuity. Architected and implemented micro frontend
-                        solutions and microservices, leading the successful
-                        migration of legacy applications to modern technology
-                        stacks. Worked closely with cross-functional teams to
-                        ensure seamless integration between new and existing
-                        systems, maintaining system stability throughout the
-                        transformation process.
-                      </small>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="list-group-item">
-                <div class="row align-items-center">
-                  <div class="col-auto">
-                    <img src="assets/websis.jpg" width="60" />
-                  </div>
-                  <div class="col-4">
-                    <h5 class="text-truncate">Websis Tecnologia</h5>
-                    <span>
-                      <i class="fa-solid fa-user-tie fa-fw"></i>
-                      Full Stack Developer
-                    </span>
-                    <br />
-                    <span>
-                      <i class="fa-solid fa-calendar fa-fw"></i> Aug 2017 ~ Jan
-                      2018
-                    </span>
-                  </div>
-                  <div class="col border-start">
-                    <p class="mb-0">
-                      <small>
-                        Focused on legacy system maintenance while driving
-                        modernization initiatives throughout the organization.
-                        Led the initial development of next-generation
-                        applications to replace legacy systems, implementing
-                        modern development practices and technologies in new
-                        projects. Maintained critical legacy systems while
-                        ensuring smooth transition to new solutions, balancing
-                        maintenance requirements with modernization goals.
-                      </small>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="list-group-item">
-                <div class="row align-items-center">
-                  <div class="col-auto">
-                    <img src="assets/xys.jpg" width="60" />
-                  </div>
-                  <div class="col-4">
-                    <h5 class="text-truncate">Xys Tecnologia</h5>
-                    <span>
-                      <i class="fa-solid fa-user-tie fa-fw"></i> Full Stack
-                      Developer
-                    </span>
-                    <br />
-                    <span>
-                      <i class="fa-solid fa-calendar fa-fw"></i> Jul 2014 ~ Sep
-                      2016
-                    </span>
-                  </div>
-                  <div class="col border-start">
-                    <p class="mb-0">
-                      <small>
-                        Specialized in developing and maintaining a PHP and
-                        Angular-based enterprise product, focusing on
-                        customizing and extending core product functionality to
-                        meet diverse client requirements. Developed new modules
-                        and features based on specific customer needs while
-                        maintaining and optimizing existing codebase to ensure
-                        backward compatibility. Worked directly with clients to
-                        gather requirements and implement tailored solutions,
-                        ensuring high customer satisfaction and product
-                        reliability.
-                      </small>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="list-group-item">
-                <div class="row align-items-center">
-                  <div class="col-auto">
-                    <img src="assets/light.jpg" width="60" />
-                  </div>
-                  <div class="col-4">
-                    <h5 class="text-truncate">LightBase</h5>
-                    <span>
-                      <i class="fa-solid fa-user-tie fa-fw"></i> Junior
-                      developer
-                    </span>
-                    <br />
-                    <span>
-                      <i class="fa-solid fa-calendar fa-fw"></i> Feb 2013 ~ Jun
-                      2014
-                    </span>
-                  </div>
-                  <div class="col border-start">
-                    <p class="mb-0">
-                      <small>
-                        Progressed from intern to junior developer role,
-                        focusing on open-source development and system
-                        administration tasks. Gained valuable hands-on
-                        experience with system daemons and cron job development
-                        before transitioning to web development. Contributed to
-                        open-source projects while learning collaborative
-                        development workflows and fundamental development
-                        practices. This formative experience provided a strong
-                        foundation in software development principles and best
-                        practices that shaped future career growth.
-                      </small>
-                    </p>
-                  </div>
-                </div>
-              </div>
+              </template>
             </div>
           </div>
         </div>
@@ -372,7 +167,7 @@
 
     <section class="sheet">
       <div class="container-fluid">
-        <div class="row" style="margin-top: 44px">
+        <div class="row my-5">
           <div class="col">
             <h1 class="display-6 my-3 text-center">Known Technologies</h1>
             <ul class="list-group list-group-flush">
@@ -470,7 +265,7 @@
             </ul>
           </div>
         </div>
-        <div class="row mt-5">
+        <div class="row my-5">
           <div class="col">
             <h1 class="display-6 my-3 text-center">Certifications</h1>
             <div class="row align-items-center">
@@ -490,7 +285,7 @@
             </div>
           </div>
         </div>
-        <div class="row mt-5">
+        <div class="row my-5">
           <div class="col">
             <h1 class="display-6 my-3 text-center">Educational Background</h1>
             <div class="row align-items-center">
